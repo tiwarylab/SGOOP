@@ -1,0 +1,23 @@
+Use reweight to convert biased trajectories to usable unbiased probability distributions and analyze them with SGOOP.
+SGOOP may also be used with unbiased data using the rc_eval function.
+
+Run SGOOP on multiple numbers of wells (sgoop.wells) checking each time that the number is self-consistent with the number
+of wells in the probability distribution (depth > kT).  The optimized RC with highest number of self-consistent wells is
+the optimal RC.  For instance, if 2 wells was self-consistent but 3 was not the 2 well RC would be the optimum.  These
+consistency checks will soon be automated and sgoop.wells values will be looped through.
+
+Files needed: Maximum Caliber (unbiased) trajectory, COLVAR file, FES files
+
+
+The following function is an example of using SGOOP and reweight together.  This would be used with an optimization method
+such as simulated annealing:
+
+import sgoop
+import reweight as rw
+import scipy.optimize as opt
+import numpy as np
+
+def opti_func(rc):
+    p = rw.reweight(rc) # Calculating probability along RC
+    sgoop.set_bins(rc,np.shape(p)[0],rw.s_min,rw.s_max) # Setting bins for maxcal
+    return sgoop.sgoop(rc,p)   # Calculating the spectral gap on the given RC.
