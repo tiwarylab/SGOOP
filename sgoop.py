@@ -3,9 +3,12 @@ Probabilites are calculated using MD trajectories. Transition rates are
 found using the maximum caliber approach.  
 For unbiased simulations use rc_eval().
 For biased simulations calculate unbiased probabilities and analyze then with sgoop().
+
+The original method was published by Tiwary and Berne, PNAS 2016, 113, 2839.
+
 Author: Zachary Smith                   zsmith7@terpmail.umd.edu
-Original Author: Pablo Bravo Collado    ptbravo@uc.cl
-Professor: Pratyush Tiwary              ptiwary@umd.edu """
+Original Algorithm: Pratyush Tiwary     ptiwary@umd.edu 
+Contributor: Pablo Bravo Collado        ptbravo@uc.cl"""
 
 import numpy as np
 import scipy.optimize as opt
