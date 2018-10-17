@@ -21,7 +21,7 @@ from mpl_toolkits.mplot3d import Axes3D
 """User Defined Variables"""
 in_file = 'ZS.traj' # Input file
 nrc = 18            # Number of reaction coordinates
-rc_bin = 20         # Bins over RC  (rc_bin < x_bin)
+rc_bin = 20         # Bins over RC
 wells = 2           # Expected number of wells with barriers > kT
 d = 1               # Distance between indexes for transition
 prob_cutoff = 1e-5  # Minimum nonzero probability
