@@ -322,7 +322,7 @@ def rebias(rc,old_rc,old_p,commandline=False,sparse=False):
 
 
 
-def reweight2d(d1,d2,data=None):
+def reweight2d(d1,d2,size=100,data=None):
     # Reweighting biased MD trajectory to a 2D probability.
     global gamma, kT, fesfilename, numdat, col_fe, datafile, col_rewt, numrewt, col_bias, ngrid, s_min, s_max,fes
     if data != None:
@@ -349,7 +349,7 @@ def reweight2d(d1,d2,data=None):
         fes[i-1] = ebias
         denom += ebias
 
-    hist = np.histogram2d(colvar[:,d1],colvar[:,d2],100,weights=fes)
+    hist = np.histogram2d(colvar[:,d1],colvar[:,d2],size,weights=fes)
     hist = hist[0]
     pnorm = hist/np.sum(hist)
     return pnorm
