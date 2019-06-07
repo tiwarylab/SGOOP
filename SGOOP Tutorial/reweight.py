@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """This reweighting code is based on the algorithm proposed by Tiwary
 and Parrinello, JPCB 2014, 119 (3), 736-742. This is a modified version
-of te reweighting code based on earlier version (v1.0 - 23/04/2015) 
+of the reweighting code based on earlier version (v1.0 - 23/04/2015) 
 available in GitHub which was originally written by L. Sutto and 
 F.L. Gervasio, UCL.
 
