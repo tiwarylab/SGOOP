@@ -58,14 +58,6 @@ def normalize_rc(rc):
 
 
 
-def generate_rc(i):
-    # Generates a unit vector with angle pi*i
-    x=np.cos(np.pi*i)
-    y=np.sin(np.pi*i)
-    return (x,y)
-
-
-
 def md_prob(rc,rc_bin=20,show_binned=False):
     # Calculates probability along a given RC
     proj=np.dot(data_array,rc)
