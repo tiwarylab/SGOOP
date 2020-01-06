@@ -1,6 +1,6 @@
 Any publications using this code are requested to cite the following references:
 1. Tiwary and Berne, Proc. Natl. Acad. Sci. 113 DOI: 10.1073/pnas.1600917113
-2. Smith, Pramanik, Tsai and Tiwary, bioRxiv 438549; DOI: 10.1101/438549
+2. Smith, Pramanik, Tsai and Tiwary, J. Chem. Phys., 2018, 149 234105; DOI: 10.1063/1.5064856
 3. Tiwary and Parrinello, J. Phys. Chem. B, 2015, 119 736; DOI: 10.1021/jp504920s
 
 Use reweight to convert biased trajectories to usable unbiased probability distributions and analyze them with SGOOP.
