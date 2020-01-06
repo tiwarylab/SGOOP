@@ -1,5 +1,5 @@
 **SGOOP Tutorial.doxc**  
-Tips for the use of SGOOP  
+Tips for the use of SGOOP.
 
 **Unbiased Loop.ipynb**  
 Example using SGOOP with the basinhopping algorithm to find minima.
