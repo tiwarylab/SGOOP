@@ -20,10 +20,10 @@ gamma = 15                    # Biasfactor in well-tempered metadynamics.
 kT = 2.5                      # Temperature times Boltzmann constant.
 fesfilename = "fes_"          # FES file name start.
 numdat = 20                   # Number of FES files.
-col_fe = 1                    # Column of free energy.
+col_fe = 1                    # Column of free energy, indexing from 0.
 datafile = "COLVAR_short5"    # COLVAR file name.
-col_rewt = [2,3,5,6]          # COLVAR columns corresponding to RC variables.
-col_bias = [7]                # COLVAR bias column.
+col_rewt = [2,3,5,6]          # COLVAR columns corresponding to RC variables, indexing from 0.
+col_bias = [7]                # COLVAR bias column, indexing from 0.
 ngrid = 50                    # Number of grid bins.
 
 
